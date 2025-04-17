@@ -1,0 +1,54 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 1px solid red;
+}
+
+.header-section-fullwidth,
+.images-section-fullwidth,
+.quote-section-fullwidth,
+.signup-section-fullwidth,
+.footer-section-fullwidth {
+    display: flex;
+    justify-content: center;
+}
+
+.header-section,
+.images-section,
+.quote-section,
+.signup-section,
+.footer-section {
+    flex: 0.8;
+}
+
+.header-banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-hero-container {
+    display: flex;
+}
+
+.hero-text,
+.hero-image {
+    flex: 0.5;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
