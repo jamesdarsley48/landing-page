@@ -2,10 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-div {
-    border: 1px solid red;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-section-fullwidth,
@@ -18,16 +15,32 @@ div {
 }
 
 .header-section,
-.images-section,
-.quote-section,
 .signup-section,
 .footer-section {
     flex: 0.8;
 }
 
+.quote-section,
+.images-section {
+    flex: 0.7;
+}
+
+.header-section-fullwidth,
+.header-section {
+    background-color: #1F2937;
+}
+
+.header-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
 .header-banner-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .header-links ul {
@@ -35,10 +48,19 @@ div {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 8px;
+}
+
+.header-links li {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .header-hero-container {
     display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 10px;
 }
 
 .hero-text,
@@ -46,9 +68,47 @@ div {
     flex: 0.5;
 }
 
+.hero-text h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-text button {
+    padding: 5px 15px 5px 15px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin-top: 6px;
+    border: none;
+    color: #F9FAF8;
+    font-weight: 700;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-image {
+    background-color: darkgrey;
+    color: white;
+}
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-carousel {
+    display: flex;
+}
+
+.footer-section,
+.signup-section,
 .hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
