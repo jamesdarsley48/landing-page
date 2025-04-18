@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
 .header-section-fullwidth,
@@ -20,13 +20,10 @@ body {
     flex: 0.8;
 }
 
-.quote-section,
-.images-section {
-    flex: 0.7;
-}
-
 .header-section-fullwidth,
-.header-section {
+.header-section,
+.footer-section-fullwidth,
+.footer-section {
     background-color: #1F2937;
 }
 
@@ -95,14 +92,112 @@ body {
     color: white;
 }
 
+.images-section-fullwidth,
+.images-section,
+.signup-section-fullwidth,
+.signup-section {
+    background-color: white;
+}
+
 .images-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex: 0.7;
+}
+
+.images-section h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
 }
 
 .images-carousel {
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    text-align: center;
+    color: #1F2937;
+}
+
+.carousel-item-outline {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.quote-section-fullwidth,
+.quote-section {
+    background-color: #E5E7EB;
+}
+
+.quote-section {
+    flex: 0.5;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.quote-author {
+    text-align: end;
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.signup-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+.signup-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.signup-box-text {
+    color: #E5E7EB;
+}
+
+.signup-box-text-title {
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.signup-section button {
+    padding: 5px 15px 5px 15px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin-top: 6px;
+    border: 2px solid white;
+    color: #F9FAF8;
+    font-weight: 700;
+}
+
+.footer-section {
+    margin: 15px;
+    color: #E5E7EB
 }
 
 .footer-section,
